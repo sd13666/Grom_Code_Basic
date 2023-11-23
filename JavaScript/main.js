@@ -164,3 +164,15 @@
 // console.log(compareSums(5, 10, 5, 10));
 // console.log(compareSums(5, 15, 3, 5));
 // console.log(compareSums(-2, 5, 5, 9));
+// -----------------------------------------
+// function sendEmail() {
+//   console.log("Gromcode party invitation was sent!");
+// }
+
+// function sendEmailList() {
+//   for (let i = 0; i < 30; i++) {
+//     console.log("Gromcode party invitation was sent!");
+//   }
+// }
+// sendEmailList(30);
+//----------------------------------------
