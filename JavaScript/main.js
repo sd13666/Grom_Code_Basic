@@ -176,3 +176,80 @@
 // }
 // sendEmailList(30);
 //----------------------------------------
+// function sendEmail(userName) {
+//   console.log(`Gromcode party invitation was sent to ${userName}`);
+// }
+
+// function sendEmailList(userNames) {
+//   userNames.forEach(userName => {
+//     sendEmail(userName);
+//     console.log(`Gromcode party invitation was sent to ${userName}!`);
+//   });
+// }
+
+// const users = ['Alice', 'Bob', 'Charlie'];
+// sendEmailList(users);
+// ---------------------------------------------------
+/*Первая задача уже требует решения ;) Каждый день кофейни Авы посещают 
+сотни клиентов. Каждый из них делает покупки. 
+И Аве нужно знать на какую сумму в день покупок было совершено. 
+Этот показатель в бизнесе называется выручкой. 
+Итак, у тебя есть массив целых чисел, 
+где каждое число, это покупки за день в кофейнях. Напиши функцию getRevenue,
+, которая будет считать выручку всех кофеен.
+Вторая функция checkRevenue должна проверять больше ли выручка 
+всей сети за день от заданного плана. 
+План - это число, которое приходит в функцию.
+Функция getRevenue должна принимать массив всех продаж за день 
+и считать выручку.
+Функция checkRevenue должна принимать массив всех продаж, 
+план общей выручки на день и возвращать true  если вырычка больше или равняется плану, 
+false  в другом случае. */
+//--
+// function getRevenue(sales) {
+//   let totalRevenue = sales.reduce((a, b) => a + b, 0);
+//   return totalRevenue;
+// }
+
+// function checkRevenue(sales, plannedRevenue) {
+//   let totalRevenue = getRevenue(sales);
+//   return totalRevenue >= plannedRevenue;
+// }
+// console.log(getRevenue([25, 40, 10, 58])) // returns ==> 133
+// console.log(checkRevenue([25, 40, 10, 58], 100)) // returns ==> true
+//---------------------------------------------------------------
+//--Фунцкція reverseArray--
+// function reverseArray(arr) {
+//   const newArray = [...arr].reverse();
+//   return newArray;
+// };
+
+// console.log(reverseArray([11, 4, 8, 3]))
+//-----------------------------------------------------
+/*Создай ф-цию, которая создаст другой массив с 
+первыми n  элементами входящего массива.
+Функция getSubArray  должна вернуть новый массив, 
+который содержит первые n элементов входящего массива.*/
+// const getSubArray = (arr, numberOfElements) => {
+//   return arr.slice(0, numberOfElements);
+// };
+
+// // examples
+// console.log(getSubArray([11, 4, 8, 3], 2)); // ==> [11, 4]
+// console.log(getSubArray([1, 2, 3, 4, 5], 3)); // ==> [1, 2, 3]
+// console.log(getSubArray(['some string', 'hello', 'I am happy'], 1)); // ==> ['some string']
+//-------------------------------------------------------
+/*Напиши функцию, которая будет клонировать 
+входящий массив и возвращать новый массив.
+Функция cloneArr  должна клонировать входящий массив и
+возвращать новый массив.
+Исходный массив не должен поменяться*/
+// function cloneArr(arr) {
+//   let newArr = [...arr];
+//   return newArr;
+// }
+
+// // examples
+// console.log(cloneArr([11, 4, 8, 3])); // returns ==> [11, 4, 8, 3]
+// console.log(cloneArr([])); // returns ==> []
+// console.log(cloneArr([0])); // returns ==> [0]

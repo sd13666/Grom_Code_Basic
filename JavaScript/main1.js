@@ -1,4 +1,4 @@
-// --Code Style--//
+      // --Code Style--//
 // function sum(from, to) {
 //   let result = 0;
 
@@ -17,10 +17,11 @@
 //     return false;
 //   }
 // }
-// - Правильно-- //
-function compareSums(firstFrom, firstTo, secondFrom, secondTo) {
-  return sum(firstFrom, firstTo) > sum(secondFrom, secondTo);
-}
+
+      // - Правильно-- //
+// function compareSums(firstFrom, firstTo, secondFrom, secondTo) {
+//   return sum(firstFrom, firstTo) > sum(secondFrom, secondTo);
+// }
 
 // function sum(from, to) {
 //   let sum = 0;
@@ -33,26 +34,22 @@ function compareSums(firstFrom, firstTo, secondFrom, secondTo) {
 // console.log(sum(2, 10));
 // console.log(compareSums(1, 4, 4, 6));
 
+      // --- Debugger Code ----//
+// function sum(from, to) {
+//   let res = 0;
 
+//   for (let num = from; num <= to; num += 1) {
+//     res += num;
+//   }
+//   return res;
+// }
 
+// function compareSums(firstFrom, firstTo, secondFrom, secondTo) {
+//   return sum(firstFrom, firstTo) > sum(secondFrom, secondTo);
+// }
 
-
-// --- Debugger Code ----//
-function sum(from, to) {
-  let res = 0;
-
-  for (let num = from; num <= to; num += 1) {
-    res += num;
-  }
-  return res;
-}
-
-function compareSums(firstFrom, firstTo, secondFrom, secondTo) {
-  return sum(firstFrom, firstTo) > sum(secondFrom, secondTo);
-}
-
-console.log(sum(5, 10));
-console.log(sum(11, 11));
-console.log(compareSums(5, 10, 5, 10));
-console.log(compareSums(5, 15, 3, 5));
-console.log(compareSums(-2, 5, 5, 9));
+// console.log(sum(5, 10));
+// console.log(sum(11, 11));
+// console.log(compareSums(5, 10, 5, 10));
+// console.log(compareSums(5, 15, 3, 5));
+// console.log(compareSums(-2, 5, 5, 9));
