@@ -34,19 +34,11 @@ console.log(getTotalBalance(dayTransactions)); // ===> 1536
 //------------------------
 //------------------------
 //------------------------
+
 // function getTotalBalance(transactions) {
 //   const totalBalance = transactions.reduce((total, transaction) => total + transaction.amount, 0);
 //   return totalBalance;
 // }
-
-// // приклад
-// const dayTransactions = [
-//   { id: 1001, amount: 60 },
-//   { id: 1002, amount: -160 },
-//   { id: 1003, amount: 2000 },
-//   { id: 1004, amount: -500 },
-//   { id: 1005, amount: 136 },
-// ];
 
 // console.log(getTotalBalance(dayTransactions)); // ===> 1536
 /*У цьому випадку ми використовуємо метод reduce 

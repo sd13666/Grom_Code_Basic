@@ -9,11 +9,11 @@
 допомогою методу фільтрації унікальних значень. 
 Ось приклад реалізації функції getUniques: */
 
-function getUniques(arr) {
-  return arr.filter((value, index, self) => {
-    return self.indexOf(value) === index;
-  });
-}
+// function getUniques(arr) {
+//   return arr.filter((value, index, self) => {
+//     return self.indexOf(value) === index;
+//   });
+// }
 
 // examples
 console.log(getUniques([1, 2, 1, 5, 18, 5, 2, 1, 9])); // ===> [1, 2, 5, 18, 9]
@@ -30,15 +30,15 @@ console.log(getUniques([1])); // ===> [1]
 //--------------------------------------------------
 //--------------------------------------------------
 //--------------------------------------------------
-function getUniques(arr) {
-  const uniqueArray = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (uniqueArray.indexOf(arr[i]) === -1) {
-      uniqueArray.push(arr[i]);
-    }
-  }
-  return uniqueArray;
-}
+// function getUniques(arr) {
+//   const uniqueArray = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (uniqueArray.indexOf(arr[i]) === -1) {
+//       uniqueArray.push(arr[i]);
+//     }
+//   }
+//   return uniqueArray;
+// }
 
 // приклади
 console.log(getUniques([1, 2, 1, 5, 18, 5, 2, 1, 9])); // ===> [1, 2, 5, 18, 9]
@@ -66,15 +66,15 @@ arr[i] в масиві uniqueArray за допомогою методу indexOf.
 //--------------------------------------------------
 //--------------------------------------------------
 //--------------------------------------------------
-function getUniques(arr) {
-  const uniqueArray = [];
-  for (const value of arr) {
-    if (!uniqueArray.includes(value)) {
-      uniqueArray.push(value);
-    }
-  }
-  return uniqueArray;
-}
+// function getUniques(arr) {
+//   const uniqueArray = [];
+//   for (const value of arr) {
+//     if (!uniqueArray.includes(value)) {
+//       uniqueArray.push(value);
+//     }
+//   }
+//   return uniqueArray;
+// }
 
 // приклади
 console.log(getUniques([1, 2, 1, 5, 18, 5, 2, 1, 9])); // ===> [1, 2, 5, 18, 9]
@@ -85,3 +85,17 @@ console.log(getUniques([1])); // ===> [1]
 не міститься в uniqueArray, то він додається до uniqueArray 
 за допомогою методу push. В результаті ми отримуємо масив,
 що містить лише унікальні значення.*/
+
+function includes (arr, elem) {
+
+  // for (let i = 0; i < arr.length; i++) {
+  //   if (arr[i] === elem) {
+  //     return true;
+  //   }
+  // }
+  // return false; 
+  
+  return 
+}
+const arr = [1,2,3,5]
+console.log(includes(arr,4))
